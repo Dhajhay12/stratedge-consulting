@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StratEdge Consulting — Helping Businesses Grow Smarter</title>
+  <meta name="description" content="StratEdge Consulting is a boutique firm helping growth-stage businesses sharpen strategy, understand their markets, and operate more efficiently.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'paper-white': '#FBFBFA',
+            'navy-950': '#0D1B2E',
+            'navy-900': '#142845',
+            'navy-700': '#24405F',
+            'navy-050': '#EEF1F5',
+            'stone-200': '#E7E4DD',
+            'brass-600': '#8A6A25',
+            'brass-500': '#A9822F',
+            'brass-100': '#F3EAD8',
+            'ink-800': '#1C1C1C',
+          },
+          fontFamily: {
+            display: ['Fraunces', 'Georgia', 'serif'],
+            body: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-paper-white text-ink-800 font-body antialiased">
+
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-navy-900 focus:text-white focus:px-4 focus:py-2">Skip to main content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="sticky top-0 z-40 bg-paper-white/95 backdrop-blur border-b border-brass-500/30">
+    <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between md:h-20">
+      <a href="index.html" class="font-display text-xl md:text-2xl font-semibold text-navy-900">StratEdge<span class="text-brass-500">.</span></a>
+      <nav class="hidden md:flex items-center gap-8" aria-label="Main navigation">
+        <a href="index.html" aria-current="page" class="link-underline text-sm text-navy-900">Home</a>
+        <a href="about.html" class="link-underline text-sm text-navy-700">About</a>
+        <a href="services.html" class="link-underline text-sm text-navy-700">Services</a>
+        <a href="case-studies.html" class="link-underline text-sm text-navy-700">Case Studies</a>
+        <a href="blog.html" class="link-underline text-sm text-navy-700">Blog</a>
+        <a href="contact.html" class="ml-2 inline-flex items-center gap-2 bg-navy-900 text-white text-sm font-medium px-5 py-2.5 hover:bg-navy-700 transition-colors">
+          <i data-lucide="calendar" class="w-4 h-4" aria-hidden="true"></i> Book a Consultation
+        </a>
+      </nav>
+      <button id="menuBtn" class="md:hidden p-2 text-navy-900" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile slide-in menu -->
+  <div id="mobileMenu" hidden class="fixed inset-0 z-50 bg-navy-900/40" role="dialog" aria-modal="true" aria-label="Mobile menu">
+    <div class="menu-panel absolute right-0 top-0 h-full w-72 max-w-[85%] bg-paper-white shadow-xl p-6 flex flex-col">
+      <div class="flex items-center justify-between mb-8">
+        <span class="font-display text-lg font-semibold text-navy-900">StratEdge<span class="text-brass-500">.</span></span>
+        <button id="menuClose" class="p-2 text-navy-900" aria-label="Close menu"><i data-lucide="x" class="w-6 h-6"></i></button>
+      </div>
+      <nav class="flex flex-col gap-5" aria-label="Mobile navigation">
+        <a href="index.html" class="link-underline text-navy-900">Home</a>
+        <a href="about.html" class="link-underline text-navy-700">About</a>
+        <a href="services.html" class="link-underline text-navy-700">Services</a>
+        <a href="case-studies.html" class="link-underline text-navy-700">Case Studies</a>
+        <a href="blog.html" class="link-underline text-navy-700">Blog</a>
+        <a href="contact.html" class="mt-3 inline-flex items-center justify-center gap-2 bg-navy-900 text-white px-5 py-3">
+          <i data-lucide="calendar" class="w-4 h-4" aria-hidden="true"></i> Book a Consultation
+        </a>
+      </nav>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero-texture max-w-6xl mx-auto px-5 pt-12 pb-16 md:pt-20 md:pb-24">
+      <div class="md:grid md:grid-cols-12 md:gap-12 md:items-center">
+        <div class="md:col-span-6">
+          <span aria-hidden="true" class="hero-rise block w-14 h-[3px] bg-brass-500 mb-8"></span>
+          <h1 class="hero-rise font-display text-4xl sm:text-5xl md:text-6xl font-semibold leading-[1.08] text-navy-900">
+            Helping Businesses Grow Smarter
+          </h1>
+          <p class="hero-rise-delay mt-6 max-w-xl text-lg text-navy-700">
+            StratEdge Consulting works with founders and leadership teams to sharpen strategy, understand their markets, and build operations that scale without friction.
+          </p>
+          <div class="hero-rise-delay mt-10 flex flex-wrap items-center gap-6">
+            <a href="contact.html" class="inline-flex items-center gap-2 bg-navy-900 text-white font-medium px-7 py-3.5 hover:bg-navy-700 transition-colors">
+              <i data-lucide="calendar" class="w-4 h-4 text-brass-500" aria-hidden="true"></i> Book a Consultation
+            </a>
+            <a href="case-studies.html" class="link-underline text-navy-900 font-medium underline underline-offset-8">View Case Studies</a>
+          </div>
+        </div>
+        <figure class="hero-rise-delay mt-12 md:mt-0 md:col-span-6">
+          <span class="frame-brass block">
+            <img src="images/hero-strategy-session.jpg" alt="Consultants and a client mid-discussion around a table scattered with notes and plans" width="1200" height="800"
+                 class="w-full h-64 sm:h-80 md:h-[26rem] object-cover">
+          </span>
+        </figure>
+      </div>
+    </section>
+
+    <div class="rule-brass max-w-6xl mx-auto"></div>
+
+    <!-- ============ SERVICES SUMMARY ============ -->
+    <section class="surface-tint">
+      <div class="max-w-6xl mx-auto px-5 py-16 md:py-24">
+        <div class="md:grid md:grid-cols-12 md:gap-10">
+          <div class="md:col-span-4">
+            <h2 class="heading-tick-top font-display text-3xl md:text-4xl font-semibold text-navy-900">What we do</h2>
+            <p class="mt-4 text-navy-700 max-w-sm">Four focused practices, delivered by senior consultants rather than rotating generalists.</p>
+            <a href="services.html" class="link-underline mt-6 inline-block text-navy-900 font-medium underline underline-offset-8">Explore all services</a>
+          </div>
+          <ul class="mt-10 md:mt-0 md:col-span-8 divide-y divide-brass-500/25 border-y border-brass-500/25">
+            <li class="py-6 group">
+              <a href="services.html#business-strategy" class="md:flex md:items-baseline md:justify-between md:gap-8">
+                <span class="font-display text-2xl text-navy-900 group-hover:text-navy-700 transition-colors">Business Strategy</span>
+                <p class="mt-2 md:mt-0 md:max-w-md text-navy-700">Clear positioning, a plan for where to compete next, and the decisions needed to get there.</p>
+              </a>
+            </li>
+            <li class="py-6 group">
+              <a href="services.html#market-research" class="md:flex md:items-baseline md:justify-between md:gap-8">
+                <span class="font-display text-2xl text-navy-900 group-hover:text-navy-700 transition-colors">Market Research</span>
+                <p class="mt-2 md:mt-0 md:max-w-md text-navy-700">Primary and secondary research that tells you who your customers really are and what they will pay for.</p>
+              </a>
+            </li>
+            <li class="py-6 group">
+              <a href="services.html#process-optimization" class="md:flex md:items-baseline md:justify-between md:gap-8">
+                <span class="font-display text-2xl text-navy-900 group-hover:text-navy-700 transition-colors">Process Optimization</span>
+                <p class="mt-2 md:mt-0 md:max-w-md text-navy-700">Removing bottlenecks, redundant handoffs, and manual work that quietly drains margin.</p>
+              </a>
+            </li>
+            <li class="py-6 group">
+              <a href="services.html#startup-consulting" class="md:flex md:items-baseline md:justify-between md:gap-8">
+                <span class="font-display text-2xl text-navy-900 group-hover:text-navy-700 transition-colors">Startup Consulting</span>
+                <p class="mt-2 md:mt-0 md:max-w-md text-navy-700">Hands-on guidance from first customer to first round, from people who have operated before.</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SUCCESS METRICS ============ -->
+    <section>
+      <div class="max-w-6xl mx-auto px-5 py-16 md:py-24">
+        <h2 class="heading-tick-top font-display text-3xl md:text-4xl font-semibold text-navy-900 max-w-xl">The numbers our clients care about</h2>
+        <dl class="mt-12 grid gap-12 md:grid-cols-3 md:gap-8">
+          <div class="stat-block pt-6 pb-8">
+            <dt class="font-display text-6xl md:text-7xl font-semibold text-brass-500 stat-num" data-count="30" data-suffix="%">30%</dt>
+            <dd class="mt-3 text-navy-700 max-w-[22ch]">average efficiency increase for clients after a process engagement</dd>
+          </div>
+          <div class="stat-block pt-6 pb-8">
+            <dt class="font-display text-6xl md:text-7xl font-semibold text-brass-500 stat-num" data-count="18" data-suffix="%">18%</dt>
+            <dd class="mt-3 text-navy-700 max-w-[22ch]">typical reduction in annual overhead within the first year</dd>
+          </div>
+          <div class="stat-block pt-6 pb-8">
+            <dt class="font-display text-6xl md:text-7xl font-semibold text-brass-500 stat-num" data-count="120" data-suffix="+">120+</dt>
+            <dd class="mt-3 text-navy-700 max-w-[22ch]">engagements completed across retail, software, and healthcare</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <div class="rule-brass max-w-6xl mx-auto"></div>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="surface-tint">
+      <div class="max-w-6xl mx-auto px-5 py-16 md:py-24">
+        <h2 class="heading-tick-top font-display text-3xl md:text-4xl font-semibold text-navy-900">What clients say</h2>
+        <div class="mt-10 md:grid md:grid-cols-12 md:gap-12">
+          <figure class="md:col-span-4">
+            <span class="frame-brass block">
+              <img src="images/team-meeting.jpg" alt="Consultants and a client working through notes around a table in a bright meeting room" width="1100" height="733"
+                   class="w-full h-64 md:h-full object-cover">
+            </span>
+          </figure>
+          <div class="mt-12 md:mt-0 md:col-span-8 space-y-10">
+            <figure class="quote-brass">
+              <blockquote class="text-navy-700 text-lg leading-relaxed max-w-prose">“They didn’t hand us a deck and leave. They sat with our ops team for six weeks, and the changes are still working two years later.”</blockquote>
+              <figcaption class="mt-4 text-sm">
+                <span class="font-semibold text-navy-900">Dana Whitfield</span><br>
+                <span class="text-navy-700">Chief Operating Officer, Meridian Retail Group</span>
+              </figcaption>
+            </figure>
+            <figure class="quote-brass">
+              <blockquote class="text-navy-700 text-lg leading-relaxed max-w-prose">“The market research paid for itself before the project ended. We repositioned two product lines and finally understood why sales had stalled.”</blockquote>
+              <figcaption class="mt-4 text-sm">
+                <span class="font-semibold text-navy-900">Marcus Ibarra</span><br>
+                <span class="text-navy-700">Founder and CEO, Ledgerline Software</span>
+              </figcaption>
+            </figure>
+            <figure class="quote-brass">
+              <blockquote class="text-navy-700 text-lg leading-relaxed max-w-prose">“As a first-time founder I needed someone to pressure-test the plan, not just cheer it on. StratEdge did exactly that, patiently and directly.”</blockquote>
+              <figcaption class="mt-4 text-sm">
+                <span class="font-semibold text-navy-900">Priya Raghavan</span><br>
+                <span class="text-navy-700">Co-founder, Clearhaven Health Partners</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CASE STUDIES TEASER ============ -->
+    <section>
+      <div class="max-w-6xl mx-auto px-5 py-16 md:py-24">
+        <div class="flex items-baseline justify-between flex-wrap gap-4">
+          <h2 class="heading-tick-top font-display text-3xl md:text-4xl font-semibold text-navy-900">Recent work</h2>
+          <a href="case-studies.html" class="link-underline text-navy-900 font-medium underline underline-offset-8">All case studies</a>
+        </div>
+        <div class="mt-12 grid gap-10 md:grid-cols-3 md:gap-8">
+          <a href="case-studies.html#regional-retail" class="block border-t-2 border-brass-500 pt-5 group">
+            <span class="text-sm text-brass-600 font-medium">Regional Retail Chain</span>
+            <h3 class="mt-2 font-display text-2xl text-navy-900 group-hover:text-brass-600 transition-colors">Reworking store operations from the stockroom up</h3>
+            <p class="mt-3 text-navy-700">A 14-store chain cut fulfillment delays and lifted staff productivity by a third in one season.</p>
+          </a>
+          <a href="case-studies.html#b2b-saas" class="block border-t-2 border-brass-500 pt-5 group">
+            <span class="text-sm text-brass-600 font-medium">B2B SaaS Startup</span>
+            <h3 class="mt-2 font-display text-2xl text-navy-900 group-hover:text-brass-600 transition-colors">Trimming overhead before the next raise</h3>
+            <p class="mt-3 text-navy-700">A 40-person software company cut annual costs nearly a fifth without touching the engineering roadmap.</p>
+          </a>
+          <a href="case-studies.html#regional-healthcare" class="block border-t-2 border-brass-500 pt-5 group">
+            <span class="text-sm text-brass-600 font-medium">Regional Healthcare Provider</span>
+            <h3 class="mt-2 font-display text-2xl text-navy-900 group-hover:text-brass-600 transition-colors">Rebuilding the patient acquisition funnel</h3>
+            <p class="mt-3 text-navy-700">A multi-clinic provider nearly doubled qualified new-patient inquiries in half a year.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ============ CASE STUDIES TEASER ============ -->
+    <section class="surface-tint">
+      <div class="max-w-6xl mx-auto px-5 py-16 md:py-24">
+        <div class="flex items-baseline justify-between flex-wrap gap-4">
+          <h2 class="heading-tick-top font-display text-3xl md:text-4xl font-semibold text-navy-900">Recent work</h2>
+          <a href="case-studies.html" class="link-underline text-navy-900 font-medium underline underline-offset-8">All case studies</a>
+        </div>
+        <div class="mt-12 grid gap-10 md:grid-cols-3 md:gap-8">
+          <a href="case-studies.html#regional-retail" class="block border-t-2 border-brass-500 pt-5 group">
+            <span class="text-sm text-brass-600 font-medium">Regional Retail Chain</span>
+            <h3 class="mt-2 font-display text-2xl text-navy-900 group-hover:text-brass-600 transition-colors">Reworking store operations from the stockroom up</h3>
+            <p class="mt-3 text-navy-700">A 14-store chain cut fulfillment delays and lifted staff productivity by a third in one season.</p>
+          </a>
+          <a href="case-studies.html#b2b-saas" class="block border-t-2 border-brass-500 pt-5 group">
+            <span class="text-sm text-brass-600 font-medium">B2B SaaS Startup</span>
+            <h3 class="mt-2 font-display text-2xl text-navy-900 group-hover:text-brass-600 transition-colors">Trimming overhead before the next raise</h3>
+            <p class="mt-3 text-navy-700">A 40-person software company cut annual costs nearly a fifth without touching the engineering roadmap.</p>
+          </a>
+          <a href="case-studies.html#regional-healthcare" class="block border-t-2 border-brass-500 pt-5 group">
+            <span class="text-sm text-brass-600 font-medium">Regional Healthcare Provider</span>
+            <h3 class="mt-2 font-display text-2xl text-navy-900 group-hover:text-brass-600 transition-colors">Rebuilding the patient acquisition funnel</h3>
+            <p class="mt-3 text-navy-700">A multi-clinic provider nearly doubled qualified new-patient inquiries in half a year.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FINAL CTA ============ -->
+    <section class="bg-navy-950 text-white">
+      <div class="max-w-6xl mx-auto px-5 py-16 md:py-24 md:flex md:items-center md:justify-between md:gap-12">
+        <div class="max-w-xl">
+          <span aria-hidden="true" class="block w-14 h-[3px] bg-brass-500 mb-6"></span>
+          <h2 class="font-display text-3xl md:text-4xl font-semibold">Let’s talk about what growth should look like for you.</h2>
+          <p class="mt-4 text-white/80">A first consultation is a focused 45-minute conversation, not a sales call.</p>
+        </div>
+        <a href="contact.html" class="mt-8 md:mt-0 inline-flex shrink-0 items-center gap-2 bg-white text-navy-900 font-medium px-7 py-3.5 hover:bg-brass-100 transition-colors">
+          <i data-lucide="calendar" class="w-4 h-4 text-brass-600" aria-hidden="true"></i> Book a Consultation
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-navy-950 text-white">
+    <div class="max-w-6xl mx-auto px-5 py-14">
+      <div class="md:grid md:grid-cols-12 md:gap-10">
+        <div class="md:col-span-4">
+          <a href="index.html" class="font-display text-xl font-semibold text-white">StratEdge<span class="text-brass-500">.</span></a>
+          <p class="mt-3 text-sm text-white/70 max-w-xs">A boutique consulting firm helping growth-stage businesses make sharper decisions and run leaner operations.</p>
+          <div class="mt-5 flex gap-4">
+            <a href="#" aria-label="StratEdge on LinkedIn" class="text-brass-500 hover:text-brass-100"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+            <a href="#" aria-label="StratEdge on X" class="text-brass-500 hover:text-brass-100"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+            <a href="#" aria-label="Email StratEdge" class="text-brass-500 hover:text-brass-100"><i data-lucide="mail" class="w-5 h-5"></i></a>
+          </div>
+        </div>
+        <nav class="mt-10 md:mt-0 md:col-span-3" aria-label="Footer navigation">
+          <h2 class="text-sm font-semibold text-brass-500">Firm</h2>
+          <ul class="mt-4 space-y-2.5 text-sm text-white/70">
+            <li><a href="about.html" class="link-underline">About</a></li>
+            <li><a href="services.html" class="link-underline">Services</a></li>
+            <li><a href="case-studies.html" class="link-underline">Case Studies</a></li>
+            <li><a href="blog.html" class="link-underline">Blog</a></li>
+            <li><a href="contact.html" class="link-underline">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="mt-10 md:mt-0 md:col-span-5">
+          <h2 class="text-sm font-semibold text-brass-500">Newsletter</h2>
+          <p class="mt-2 text-sm text-white/70">One practical essay on strategy or operations, twice a month.</p>
+          <div class="mt-4">
+            <form data-newsletter class="flex flex-col sm:flex-row gap-3" novalidate>
+              <label for="footer-email" class="sr-only">Email address</label>
+              <input id="footer-email" type="email" required placeholder="you@company.com"
+                     class="flex-1 border border-white/25 bg-navy-900 px-4 py-2.5 text-sm text-white placeholder:text-white/45 focus:border-brass-500">
+              <button type="submit" class="bg-brass-500 text-navy-950 text-sm font-semibold px-6 py-2.5 hover:bg-brass-100 transition-colors">Subscribe</button>
+            </form>
+            <p data-newsletter-msg hidden class="mt-3 text-sm text-brass-100 font-medium"></p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 pt-6 border-t border-brass-500/30 text-sm text-white/60 flex flex-wrap justify-between gap-2">
+        <p>© <span data-year>2026</span> StratEdge Consulting. All rights reserved.</p>
+        <p>Fictional firm for demonstration purposes.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

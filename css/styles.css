@@ -1,0 +1,254 @@
+/* StratEdge Consulting — global styles layered on Tailwind CDN */
+
+:root {
+  --paper-white: #FBFBFA;
+  --navy-950: #0D1B2E;   /* deeper shade — weightier bands */
+  --navy-900: #142845;
+  --navy-700: #24405F;
+  --navy-050: #EEF1F5;   /* light navy tint — alternating sections */
+  --stone-200: #E7E4DD;
+  --brass-600: #8A6A25;  /* deeper brass for small text on light surfaces */
+  --brass-500: #A9822F;
+  --brass-100: #F3EAD8;  /* brass whisper — rules and hairline borders */
+  --ink-800: #1C1C1C;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--paper-white);
+  color: var(--ink-800);
+  font-family: 'Inter', system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+/* Typography rhythm */
+.font-display { font-family: 'Fraunces', Georgia, serif; font-optical-sizing: auto; }
+
+/* Visible keyboard focus */
+a:focus-visible, button:focus-visible, input:focus-visible,
+select:focus-visible, textarea:focus-visible, summary:focus-visible {
+  outline: 2px solid var(--brass-500);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Nav / text link hover underline animation */
+.link-underline {
+  position: relative;
+  text-decoration: none;
+}
+.link-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+  height: 1.5px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 250ms ease;
+}
+.link-underline:hover::after,
+.link-underline:focus-visible::after,
+.link-underline[aria-current="page"]::after {
+  transform: scaleX(1);
+}
+
+/* Hero entrance — one orchestrated rise, hero only */
+@keyframes riseIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.hero-rise {
+  animation: riseIn 360ms ease-out both;
+}
+.hero-rise-delay {
+  animation: riseIn 360ms ease-out 120ms both;
+}
+
+/* Smooth expand for case-study detail blocks */
+details.expand > div {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 350ms ease, opacity 350ms ease;
+}
+details.expand[open] > div {
+  max-height: 4000px;
+  opacity: 1;
+}
+details.expand > summary {
+  cursor: pointer;
+  list-style: none;
+}
+details.expand > summary::-webkit-details-marker { display: none; }
+details.expand > summary .chev { transition: transform 300ms ease; }
+details.expand[open] > summary .chev { transform: rotate(180deg); }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .hero-rise, .hero-rise-delay { animation: none; opacity: 1; transform: none; }
+  .link-underline::after { transition: none; }
+  details.expand > div { transition: none; max-height: none; opacity: 1; }
+  details.expand > summary .chev { transition: none; }
+}
+
+/* Mobile menu slide-in */
+@keyframes slideIn {
+  from { transform: translateX(100%); }
+  to   { transform: translateX(0); }
+}
+.menu-panel { animation: slideIn 280ms ease-out both; }
+@media (prefers-reduced-motion: reduce) {
+  .menu-panel { animation: none; }
+}
+
+/* Calendar slot feedback */
+.slot { transition: background-color 200ms ease, border-color 200ms ease, color 200ms ease; }
+.slot[aria-pressed="true"] {
+  background-color: var(--navy-900);
+  border-color: var(--brass-500);
+  color: #fff;
+  box-shadow: inset 0 -3px 0 0 var(--brass-500);
+}
+.slot:hover:not([aria-pressed="true"]) {
+  border-color: var(--brass-500);
+  color: var(--brass-600);
+}
+.slot:disabled { opacity: .4; cursor: not-allowed; text-decoration: line-through; }
+
+/* Form success state */
+.success-panel { animation: riseIn 300ms ease-out both; }
+
+/* Hero texture — faint grid + brass ring in the negative space (no gradients, no photos) */
+.hero-texture {
+  position: relative;
+  isolation: isolate;
+}
+.hero-texture::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    linear-gradient(to right, rgba(20, 40, 69, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(20, 40, 69, 0.05) 1px, transparent 1px);
+  background-size: 44px 44px;
+  -webkit-mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
+          mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
+  pointer-events: none;
+}
+.hero-texture::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -90px;
+  right: 40px;
+  width: 340px;
+  height: 340px;
+  border: 1.5px solid rgba(169, 130, 47, 0.35);
+  border-radius: 50%;
+  pointer-events: none;
+}
+@media (max-width: 767px) {
+  .hero-texture::after { display: none; }
+}
+
+/* ============================================================
+   Tonal system — paper / navy tints + brass accent family
+   ============================================================ */
+
+/* Light navy tint for alternating sections (replaces flat white runs) */
+.surface-tint { background-color: var(--navy-050); }
+
+/* Brass hairline section divider */
+.rule-brass {
+  height: 1px;
+  background-color: rgba(169, 130, 47, 0.45);
+}
+
+/* Second surface: a warm stone tint, used so alternating bands
+   are not all the same value */
+.surface-stone { background-color: var(--stone-200); }
+
+/* Section heading tick — short brass accent line before a heading.
+   Applied via .heading-tick (a left accent) or .heading-tick-top
+   (a short rule sitting above the heading). */
+.heading-tick {
+  position: relative;
+  padding-left: 1.25rem;
+}
+.heading-tick::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.35em;
+  width: 3px;
+  height: 1.15em;
+  background-color: var(--brass-500);
+}
+.heading-tick-top::before {
+  content: "";
+  display: block;
+  width: 2rem;
+  height: 3px;
+  background-color: var(--brass-500);
+  margin-bottom: 0.9rem;
+}
+
+/* Brass hover on nav / text links (was: underline in currentColor only) */
+.link-underline::after {
+  background: var(--brass-500);
+}
+.link-underline:hover,
+.link-underline:focus-visible {
+  color: var(--brass-600);
+}
+/* Active page keeps its navy weight, with the brass underline showing */
+.link-underline[aria-current="page"] {
+  color: var(--navy-900);
+}
+.link-underline[aria-current="page"]::after {
+  background: var(--brass-500);
+}
+
+/* Footer links sit on a tinted surface — keep hover readable */
+.on-tint .link-underline:hover,
+.on-tint .link-underline:focus-visible {
+  color: var(--brass-600);
+}
+
+/* Brass-bordered media (photos framed in the accent family) */
+.frame-brass {
+  border: 1px solid rgba(169, 130, 47, 0.45);
+  padding: 6px;
+  background-color: var(--paper-white);
+}
+
+/* Corner accent used on pull-quote figures and testimonial blocks */
+.quote-brass {
+  position: relative;
+  padding-left: 1.5rem;
+  border-left: 2px solid rgba(169, 130, 47, 0.5);
+}
+
+/* Stat numerals get a brass rule and a brass-tinted top edge */
+.stat-block {
+  border-top: 2px solid var(--brass-500);
+  background-color: rgba(255, 255, 255, 0.55);
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+/* Stat numerals — tabular figures so the count-up doesn't jitter */
+.stat-num {
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+/* Brass icons — applied where Lucide glyphs should read as accent */
+.icon-brass { color: var(--brass-500); }

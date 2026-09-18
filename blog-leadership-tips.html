@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leadership Tips — StratEdge Consulting</title>
+  <meta name="description" content="Practical leadership habits for founders and executives, from the consultants at StratEdge Consulting.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'paper-white': '#FBFBFA',
+            'navy-950': '#0D1B2E',
+            'navy-900': '#142845',
+            'navy-700': '#24405F',
+            'navy-050': '#EEF1F5',
+            'stone-200': '#E7E4DD',
+            'brass-600': '#8A6A25',
+            'brass-500': '#A9822F',
+            'brass-100': '#F3EAD8',
+            'ink-800': '#1C1C1C',
+          },
+          fontFamily: {
+            display: ['Fraunces', 'Georgia', 'serif'],
+            body: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-paper-white text-ink-800 font-body antialiased">
+
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-navy-900 focus:text-white focus:px-4 focus:py-2">Skip to main content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="sticky top-0 z-40 bg-paper-white/95 backdrop-blur border-b border-brass-500/30">
+    <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between md:h-20">
+      <a href="index.html" class="font-display text-xl md:text-2xl font-semibold text-navy-900">StratEdge<span class="text-brass-500">.</span></a>
+      <nav class="hidden md:flex items-center gap-8" aria-label="Main navigation">
+        <a href="index.html" class="link-underline text-sm text-navy-900">Home</a>
+        <a href="about.html" class="link-underline text-sm text-navy-700">About</a>
+        <a href="services.html" class="link-underline text-sm text-navy-700">Services</a>
+        <a href="case-studies.html" class="link-underline text-sm text-navy-700">Case Studies</a>
+        <a href="blog.html" class="link-underline text-sm text-navy-700">Blog</a>
+        <a href="contact.html" class="ml-2 inline-flex items-center gap-2 bg-navy-900 text-white text-sm font-medium px-5 py-2.5 hover:bg-navy-700 transition-colors">
+          <i data-lucide="calendar" class="w-4 h-4" aria-hidden="true"></i> Book a Consultation
+        </a>
+      </nav>
+      <button id="menuBtn" class="md:hidden p-2 text-navy-900" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile slide-in menu -->
+  <div id="mobileMenu" hidden class="fixed inset-0 z-50 bg-navy-900/40" role="dialog" aria-modal="true" aria-label="Mobile menu">
+    <div class="menu-panel absolute right-0 top-0 h-full w-72 max-w-[85%] bg-paper-white shadow-xl p-6 flex flex-col">
+      <div class="flex items-center justify-between mb-8">
+        <span class="font-display text-lg font-semibold text-navy-900">StratEdge<span class="text-brass-500">.</span></span>
+        <button id="menuClose" class="p-2 text-navy-900" aria-label="Close menu"><i data-lucide="x" class="w-6 h-6"></i></button>
+      </div>
+      <nav class="flex flex-col gap-5" aria-label="Mobile navigation">
+        <a href="index.html" class="link-underline text-navy-900">Home</a>
+        <a href="about.html" class="link-underline text-navy-700">About</a>
+        <a href="services.html" class="link-underline text-navy-700">Services</a>
+        <a href="case-studies.html" class="link-underline text-navy-700">Case Studies</a>
+        <a href="blog.html" class="link-underline text-navy-700">Blog</a>
+        <a href="contact.html" class="mt-3 inline-flex items-center justify-center gap-2 bg-navy-900 text-white px-5 py-3">
+          <i data-lucide="calendar" class="w-4 h-4" aria-hidden="true"></i> Book a Consultation
+        </a>
+      </nav>
+    </div>
+  </div>
+
+  
+  <main id="main">
+
+
+    <section class="max-w-3xl mx-auto px-5 pt-16 pb-10 md:pt-24">
+      <span aria-hidden="true" class="block w-14 h-[3px] bg-brass-500 mb-6"></span>
+      <p class="text-sm text-navy-700">By Miriam Reyes, Founder</p>
+      <p class="text-sm text-navy-700 mt-1">May 21, 2026, 7 minute read</p>
+      <h1 class="font-display text-4xl md:text-5xl font-semibold text-navy-900 mt-6 leading-tight">Leadership Tips</h1>
+    </section>
+
+    <div class="rule-brass"></div>
+
+    <section>
+      <article class="max-w-3xl mx-auto px-5 py-12 md:py-16">
+        <div class="max-w-prose space-y-5 text-navy-700">
+          
+      <p>Leadership advice tends to orbit character, be decisive, empower people, communicate vision. All true, and all useless on Monday morning. What follows are habits we have watched work in real companies, including the uncomfortable ones that most leadership writing skips. None require charisma. All require consistency.</p>
+
+      <h2 class="heading-tick font-display text-2xl md:text-3xl text-navy-900 pt-4">Run the meeting, or the meeting runs you</h2>
+      <p>Most leadership teams meet often and decide rarely. The fix is mechanical: every recurring meeting gets a stated decision it exists to make, a short agenda sent in advance, and a visible list of who owns what by the end. If a meeting has no decision attached to it, cancel it and send an update instead. Leaders who protect their calendars this way find they have hours they did not know they possessed.</p>
+
+      <h2 class="heading-tick font-display text-2xl md:text-3xl text-navy-900 pt-4">Ask the second question</h2>
+      <p>The first answer a team gives is usually the safe one, polished for the boss. The real information sits one question deeper, so ask it: what would have to be true for that to fail? What are we not saying? The habit costs thirty seconds and routinely surfaces the risk that everyone saw and nobody named. Teams notice quickly whether the second question is welcome, and they calibrate their candor accordingly.</p>
+
+      <h2 class="heading-tick font-display text-2xl md:text-3xl text-navy-900 pt-4">Name the trade-off out loud</h2>
+      <p>Every meaningful decision gives something up, and pretending otherwise breeds the quiet resentment that surfaces as resistance later. If speed is chosen over polish, say so and say what it costs. People commit to plans they helped shape far more readily than to plans handed down, and a stated trade-off invites the person who knows about the missing detail to speak while it still matters.</p>
+
+      <h2 class="heading-tick font-display text-2xl md:text-3xl text-navy-900 pt-4">Delegate outcomes, not tasks</h2>
+      <p>Hand over the result you need and the constraints around it, then let the person find their own route. Delegating tasks creates assistants; delegating outcomes creates leaders. It is slower the first month and faster every month after, and it is the only delegation that survives your vacation.</p>
+
+      <h2 class="heading-tick font-display text-2xl md:text-3xl text-navy-900 pt-4">Praise in public, correct in private, and do both quickly</h2>
+      <p>Feedback ages badly. Praise lands when it is specific and soon, and correction lands when it is private, direct, and free of the sandwich. The habit of saving issues for the annual review is a disservice to everyone involved; the goal is that nobody should ever be surprised by their own performance conversation.</p>
+
+      <h2 class="heading-tick font-display text-2xl md:text-3xl text-navy-900 pt-4">Protect the standard when it is expensive</h2>
+      <p>Culture is what you tolerate, and it is tested precisely when upholding it costs something. Answer the late-night email from the customer who bullies your support team with the same courtesy you would show a partner. Everyone watches what happens next, and the lesson persists far longer than the incident.</p>
+
+      <p>None of this is heroic. That is the point: leadership at scale is less about the rare dramatic call and more about the ordinary habits, kept visible, that make a hundred small decisions unnecessary.</p>
+    
+        </div>
+      </article>
+    </section>
+
+    <div class="rule-brass"></div>
+
+    <section class="surface-tint">
+      <div class="max-w-3xl mx-auto px-5 py-12 md:py-16">
+        <h2 class="heading-tick-top font-display text-2xl md:text-3xl font-semibold text-navy-900">Related articles</h2>
+        <div class="mt-8 grid sm:grid-cols-2 gap-8">
+          
+      <a href="blog-scale-a-business.html" class="block border-t-2 border-brass-500 pt-5 group">
+        <h3 class="font-display text-xl text-navy-900 group-hover:text-brass-600 transition-colors">5 Ways to Scale a Business</h3>
+        <p class="mt-2 text-sm text-navy-700">Fix the constraint before you feed the machine. 8 minute read</p>
+      </a>
+      <a href="blog-planning-guide.html" class="block border-t-2 border-brass-500 pt-5 group">
+        <h3 class="font-display text-xl text-navy-900 group-hover:text-brass-600 transition-colors">Business Planning Guide</h3>
+        <p class="mt-2 text-sm text-navy-700">Build a plan your team will actually follow. 10 minute read</p>
+      </a>
+    
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-navy-950 text-white">
+      <div class="max-w-6xl mx-auto px-5 py-16 md:py-20 md:flex md:items-center md:justify-between md:gap-12">
+        <div class="max-w-xl">
+          <span aria-hidden="true" class="block w-14 h-[3px] bg-brass-500 mb-6"></span>
+          <h2 class="font-display text-2xl md:text-3xl font-semibold">Working through a scaling problem right now?</h2>
+          <p class="mt-3 text-white/80">That is most of what we do. The first conversation is free.</p>
+        </div>
+        <a href="contact.html" class="mt-8 md:mt-0 inline-flex shrink-0 items-center gap-2 bg-white text-navy-900 font-medium px-7 py-3.5 hover:bg-brass-100 transition-colors">
+          <i data-lucide="calendar" class="w-4 h-4 text-brass-600" aria-hidden="true"></i> Book a Consultation
+        </a>
+      </div>
+    </section>
+  
+  </main>
+
+<!-- ============ FOOTER ============ -->
+  <footer class="bg-navy-950 text-white">
+    <div class="max-w-6xl mx-auto px-5 py-14">
+      <div class="md:grid md:grid-cols-12 md:gap-10">
+        <div class="md:col-span-4">
+          <a href="index.html" class="font-display text-xl font-semibold text-white">StratEdge<span class="text-brass-500">.</span></a>
+          <p class="mt-3 text-sm text-white/70 max-w-xs">A boutique consulting firm helping growth-stage businesses make sharper decisions and run leaner operations.</p>
+          <div class="mt-5 flex gap-4">
+            <a href="#" aria-label="StratEdge on LinkedIn" class="text-brass-500 hover:text-brass-100"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+            <a href="#" aria-label="StratEdge on X" class="text-brass-500 hover:text-brass-100"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+            <a href="#" aria-label="Email StratEdge" class="text-brass-500 hover:text-brass-100"><i data-lucide="mail" class="w-5 h-5"></i></a>
+          </div>
+        </div>
+        <nav class="mt-10 md:mt-0 md:col-span-3" aria-label="Footer navigation">
+          <h2 class="text-sm font-semibold text-brass-500">Firm</h2>
+          <ul class="mt-4 space-y-2.5 text-sm text-white/70">
+            <li><a href="about.html" class="link-underline">About</a></li>
+            <li><a href="services.html" class="link-underline">Services</a></li>
+            <li><a href="case-studies.html" class="link-underline">Case Studies</a></li>
+            <li><a href="blog.html" class="link-underline">Blog</a></li>
+            <li><a href="contact.html" class="link-underline">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="mt-10 md:mt-0 md:col-span-5">
+          <h2 class="text-sm font-semibold text-brass-500">Newsletter</h2>
+          <p class="mt-2 text-sm text-white/70">One practical essay on strategy or operations, twice a month.</p>
+          <div class="mt-4">
+            <form data-newsletter class="flex flex-col sm:flex-row gap-3" novalidate>
+              <label for="footer-email" class="sr-only">Email address</label>
+              <input id="footer-email" type="email" required placeholder="you@company.com"
+                     class="flex-1 border border-white/25 bg-navy-900 px-4 py-2.5 text-sm text-white placeholder:text-white/45 focus:border-brass-500">
+              <button type="submit" class="bg-brass-500 text-navy-950 text-sm font-semibold px-6 py-2.5 hover:bg-brass-100 transition-colors">Subscribe</button>
+            </form>
+            <p data-newsletter-msg hidden class="mt-3 text-sm text-brass-100 font-medium"></p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 pt-6 border-t border-brass-500/30 text-sm text-white/60 flex flex-wrap justify-between gap-2">
+        <p>© <span data-year>2026</span> StratEdge Consulting. All rights reserved.</p>
+        <p>Fictional firm for demonstration purposes.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

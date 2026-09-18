@@ -1,0 +1,126 @@
+const { buildPage } = require('./shell.js');
+
+/* ================= CASE STUDIES ================= */
+buildPage({
+  file: 'case-studies.html',
+  title: 'Case Studies — StratEdge Consulting',
+  description: 'Anonymized client work from StratEdge Consulting across retail, software, and healthcare.',
+  content: `
+    <section class="max-w-6xl mx-auto px-5 pt-16 pb-16 md:pt-24 md:pb-20">
+      <div class="md:grid md:grid-cols-12 md:gap-12 md:items-center">
+        <div class="md:col-span-7">
+          <span aria-hidden="true" class="hero-rise block w-14 h-[3px] bg-brass-500 mb-8"></span>
+          <h1 class="hero-rise font-display text-4xl sm:text-5xl md:text-6xl font-semibold text-navy-900">Work we can talk about</h1>
+          <p class="hero-rise-delay mt-6 max-w-xl text-lg text-navy-700">Clients are described by industry rather than by name, at their request. The situations, decisions, and numbers are real to the work even where the details are disguised.</p>
+        </div>
+        <figure class="hero-rise-delay mt-10 md:mt-0 md:col-span-5">
+          <span class="frame-brass block">
+            <img src="images/workspace-review.jpg" alt="Two consultants reviewing figures together at a desk" width="1100" height="733"
+                 class="w-full h-56 md:h-72 object-cover">
+          </span>
+        </figure>
+      </div>
+    </section>
+
+    <div class="rule-brass max-w-6xl mx-auto"></div>
+
+    <section>
+      <div class="max-w-6xl mx-auto md:divide-y md:divide-brass-500/25">
+
+        <article id="regional-retail" class="py-14 md:py-20 scroll-mt-24">
+          <div class="max-w-3xl">
+            <span class="text-sm text-brass-600 font-semibold">Regional Retail Chain</span>
+            <h2 class="heading-tick-top font-display text-3xl md:text-4xl font-semibold text-navy-900 mt-2">Reworking store operations from the stockroom up</h2>
+          </div>
+          <div class="mt-10 md:grid md:grid-cols-12 md:gap-12">
+            <div class="md:col-span-7">
+              <figure class="frame-brass mb-8">
+                <img src="images/case-retail.jpg" alt="A retail store interior with staff arranging merchandise on open shelves" width="1100" height="733"
+                     class="w-full h-56 md:h-64 object-cover">
+              </figure>
+              <div class="max-w-prose space-y-5 text-navy-700">
+                <h3 class="font-display text-2xl text-navy-900">The challenge</h3>
+              <p>A fourteen-store chain with strong same-town loyalty was quietly losing margin to its own fulfillment process. Online orders were picked from sales-floor stock, so shelves looked bare by mid-afternoon even though the back room was full. Store managers compensated by working six-day weeks, and turnover in the stockroom roles had reached twice the regional average.</p>
+              <h3 class="font-display text-2xl text-navy-900">The approach</h3>
+              <p>We spent the first two weeks in stores rather than in the office, mapping every step from truck arrival to shelf to order pickup. The diagnosis was unglamorous: no one owned the boundary between replenishment and order staging, so both jobs were done twice and neither well. We redesigned the workflow so that replenishment was completed before doors opened, gave online picking its own staging area in the back room, and set a short daily review that managers could run in eight minutes.</p>
+              <h3 class="font-display text-2xl text-navy-900">The result</h3>
+              <p>Within one season, fulfillment delays fell from same-day-backlog to a four-hour standard, stockroom turnover dropped by half, and the operating changes held without consultant supervision. The efficiency gain across the chain averaged:</p>
+              </div>
+            </div>
+            <div class="md:col-span-5 md:border-l md:border-brass-500/40 md:pl-12 mt-10 md:mt-0 border-t-2 border-brass-500 pt-6 md:border-t-0 md:pt-0">
+              <p class="stat-num font-display text-7xl md:text-8xl font-semibold text-brass-500 leading-none">30%</p>
+              <p class="mt-4 text-navy-700 max-w-[24ch]">average efficiency increase across the chain within one season</p>
+            </div>
+          </div>
+        </article>
+
+        <article id="b2b-saas" class="px-5 md:px-6 py-14 md:py-20 md:border-t md:border-brass-500/25 scroll-mt-24 surface-tint">
+          <div class="max-w-3xl">
+            <span class="text-sm text-brass-600 font-semibold">B2B SaaS Startup</span>
+            <h2 class="heading-tick-top font-display text-3xl md:text-4xl font-semibold text-navy-900 mt-2">Trimming overhead before the next raise</h2>
+          </div>
+          <div class="mt-10 md:grid md:grid-cols-12 md:gap-12">
+            <div class="md:col-span-7">
+              <figure class="frame-brass mb-8">
+                <img src="images/case-saas.jpg" alt="A software team's office with monitors showing analytics dashboards" width="1100" height="733"
+                     class="w-full h-56 md:h-64 object-cover">
+              </figure>
+              <div class="max-w-prose space-y-5 text-navy-700">
+                <h3 class="font-display text-2xl text-navy-900">The challenge</h3>
+              <p>A forty-person software company had grown headcount 60 percent in eighteen months, and its costs had grown faster than revenue. With a fundraise twelve months out, the founders needed to show operating discipline without stalling the product roadmap that justified the raise. Earlier cost-cutting attempts had produced a round of laptop-policy emails and little else.</p>
+              <h3 class="font-display text-2xl text-navy-900">The approach</h3>
+              <p>We started from spend rather than headcount, because the books showed the company paying twice for the same capabilities in different departments. Consolidating overlapping software licenses, renegotiating the two largest vendor contracts, and moving one non-critical workstream to a scheduled batch process removed a meaningful share of annual overhead. Not one engineer changed what they worked on.</p>
+              <h3 class="font-display text-2xl text-navy-900">The result</h3>
+              <p>Each change was approved in a single leadership meeting because every line arrived with its own dollar figure. The company entered its raise with a materially different cost base:</p>
+              </div>
+            </div>
+            <div class="md:col-span-5 md:border-l md:border-brass-500/40 md:pl-12 mt-10 md:mt-0 border-t-2 border-brass-500 pt-6 md:border-t-0 md:pt-0">
+              <p class="stat-num font-display text-7xl md:text-8xl font-semibold text-brass-500 leading-none">18%</p>
+              <p class="mt-4 text-navy-700 max-w-[24ch]">reduction in annual overhead, with no change to the product roadmap</p>
+            </div>
+          </div>
+        </article>
+
+        <article id="regional-healthcare" class="px-5 md:px-6 py-14 md:py-20 md:border-t md:border-brass-500/25 scroll-mt-24 surface-tint">
+          <div class="max-w-3xl">
+            <span class="text-sm text-brass-600 font-semibold">Regional Healthcare Provider</span>
+            <h2 class="heading-tick-top font-display text-3xl md:text-4xl font-semibold text-navy-900 mt-2">Rebuilding the patient acquisition funnel</h2>
+          </div>
+          <div class="mt-10 md:grid md:grid-cols-12 md:gap-12">
+            <div class="md:col-span-7">
+              <figure class="frame-brass mb-8">
+                <img src="images/case-healthcare.jpg" alt="A healthcare professional in conversation at a clinic reception area" width="1100" height="733"
+                     class="w-full h-56 md:h-64 object-cover">
+              </figure>
+              <div class="max-w-prose space-y-5 text-navy-700">
+                <h3 class="font-display text-2xl text-navy-900">The challenge</h3>
+              <p>A provider group with six clinics was spending more on marketing each year while new-patient volume stayed flat. Referrals still came mostly from a handful of long-standing physician relationships, and no one could say which advertising channels actually produced booked appointments. Meanwhile two newer clinics were running at half capacity.</p>
+              <h3 class="font-display text-2xl text-navy-900">The approach</h3>
+              <p>We traced the journey from first ad impression to kept appointment, interviewing new patients about where they had heard of the group and what almost stopped them from calling. The finding was simple: the group's best channel was invisible in its own reporting, while the largest line item went to a directory that produced almost nothing. We reallocated budget toward search and the referral program, rewrote the intake call script around the two concerns patients raised most, and set up weekly reporting the office managers could maintain themselves.</p>
+              <h3 class="font-display text-2xl text-navy-900">The result</h3>
+              <p>Qualified new-patient inquiries rose steadily for six months without any increase in total marketing spend:</p>
+              </div>
+            </div>
+            <div class="md:col-span-5 md:border-l md:border-brass-500/40 md:pl-12 mt-10 md:mt-0 border-t-2 border-brass-500 pt-6 md:border-t-0 md:pt-0">
+              <p class="stat-num font-display text-7xl md:text-8xl font-semibold text-brass-500 leading-none">42%</p>
+              <p class="mt-4 text-navy-700 max-w-[24ch]">increase in qualified leads within 6 months, at flat marketing spend</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="bg-navy-950 text-white">
+      <div class="max-w-6xl mx-auto px-5 py-16 md:py-24 md:flex md:items-center md:justify-between md:gap-12">
+        <div class="max-w-xl">
+          <span aria-hidden="true" class="block w-14 h-[3px] bg-brass-500 mb-6"></span>
+          <h2 class="font-display text-3xl md:text-4xl font-semibold">Want results like these?</h2>
+          <p class="mt-4 text-white/80">Bring us the problem that keeps showing up in your leadership meetings.</p>
+        </div>
+        <a href="contact.html" class="mt-8 md:mt-0 inline-flex shrink-0 items-center gap-2 bg-white text-navy-900 font-medium px-7 py-3.5 hover:bg-brass-100 transition-colors">
+          <i data-lucide="calendar" class="w-4 h-4 text-brass-600" aria-hidden="true"></i> Book a Consultation
+        </a>
+      </div>
+    </section>
+`,
+});

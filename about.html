@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — StratEdge Consulting</title>
+  <meta name="description" content="The story, mission, and values behind StratEdge Consulting, a boutique firm for growth-stage businesses.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'paper-white': '#FBFBFA',
+            'navy-950': '#0D1B2E',
+            'navy-900': '#142845',
+            'navy-700': '#24405F',
+            'navy-050': '#EEF1F5',
+            'stone-200': '#E7E4DD',
+            'brass-600': '#8A6A25',
+            'brass-500': '#A9822F',
+            'brass-100': '#F3EAD8',
+            'ink-800': '#1C1C1C',
+          },
+          fontFamily: {
+            display: ['Fraunces', 'Georgia', 'serif'],
+            body: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-paper-white text-ink-800 font-body antialiased">
+
+  <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:bg-navy-900 focus:text-white focus:px-4 focus:py-2">Skip to main content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="sticky top-0 z-40 bg-paper-white/95 backdrop-blur border-b border-brass-500/30">
+    <div class="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between md:h-20">
+      <a href="index.html" class="font-display text-xl md:text-2xl font-semibold text-navy-900">StratEdge<span class="text-brass-500">.</span></a>
+      <nav class="hidden md:flex items-center gap-8" aria-label="Main navigation">
+        <a href="index.html" class="link-underline text-sm text-navy-900">Home</a>
+        <a href="about.html" aria-current="page" class="link-underline text-sm text-navy-700">About</a>
+        <a href="services.html" class="link-underline text-sm text-navy-700">Services</a>
+        <a href="case-studies.html" class="link-underline text-sm text-navy-700">Case Studies</a>
+        <a href="blog.html" class="link-underline text-sm text-navy-700">Blog</a>
+        <a href="contact.html" class="ml-2 inline-flex items-center gap-2 bg-navy-900 text-white text-sm font-medium px-5 py-2.5 hover:bg-navy-700 transition-colors">
+          <i data-lucide="calendar" class="w-4 h-4" aria-hidden="true"></i> Book a Consultation
+        </a>
+      </nav>
+      <button id="menuBtn" class="md:hidden p-2 text-navy-900" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">
+        <i data-lucide="menu" class="w-6 h-6"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile slide-in menu -->
+  <div id="mobileMenu" hidden class="fixed inset-0 z-50 bg-navy-900/40" role="dialog" aria-modal="true" aria-label="Mobile menu">
+    <div class="menu-panel absolute right-0 top-0 h-full w-72 max-w-[85%] bg-paper-white shadow-xl p-6 flex flex-col">
+      <div class="flex items-center justify-between mb-8">
+        <span class="font-display text-lg font-semibold text-navy-900">StratEdge<span class="text-brass-500">.</span></span>
+        <button id="menuClose" class="p-2 text-navy-900" aria-label="Close menu"><i data-lucide="x" class="w-6 h-6"></i></button>
+      </div>
+      <nav class="flex flex-col gap-5" aria-label="Mobile navigation">
+        <a href="index.html" class="link-underline text-navy-900">Home</a>
+        <a href="about.html" aria-current="page" class="link-underline text-navy-700">About</a>
+        <a href="services.html" class="link-underline text-navy-700">Services</a>
+        <a href="case-studies.html" class="link-underline text-navy-700">Case Studies</a>
+        <a href="blog.html" class="link-underline text-navy-700">Blog</a>
+        <a href="contact.html" class="mt-3 inline-flex items-center justify-center gap-2 bg-navy-900 text-white px-5 py-3">
+          <i data-lucide="calendar" class="w-4 h-4" aria-hidden="true"></i> Book a Consultation
+        </a>
+      </nav>
+    </div>
+  </div>
+
+  
+  <main id="main">
+
+
+    <section class="max-w-6xl mx-auto px-5 pt-16 pb-16 md:pt-24 md:pb-20">
+      <span aria-hidden="true" class="hero-rise block w-14 h-[3px] bg-brass-500 mb-8"></span>
+      <h1 class="hero-rise font-display text-4xl sm:text-5xl md:text-6xl font-semibold text-navy-900">The people behind the practice</h1>
+      <p class="hero-rise-delay mt-6 max-w-xl text-lg text-navy-700">StratEdge is deliberately small. Every engagement is led by a senior consultant who has run the numbers, sat in the meetings, and owned the outcome.</p>
+    </section>
+
+    <div class="rule-brass max-w-6xl mx-auto"></div>
+
+    <section>
+      <div class="max-w-6xl mx-auto px-5 py-16 md:py-24 md:grid md:grid-cols-12 md:gap-12">
+        <div class="md:col-span-5">
+          <figure class="frame-brass">
+            <img src="images/founder-miriam-reyes.jpg" alt="Miriam Reyes, founder of StratEdge Consulting, in a professional headshot" width="900" height="1125"
+                 class="w-full object-cover" style="aspect-ratio: 4 / 5;">
+          </figure>
+          <p class="mt-4 text-sm text-navy-700">Miriam Reyes, founder and managing consultant.</p>
+        </div>
+        <div class="mt-10 md:mt-0 md:col-span-7 max-w-prose">
+          <h2 class="heading-tick-top font-display text-3xl md:text-4xl font-semibold text-navy-900">Miriam Reyes, Founder</h2>
+          <div class="mt-6 space-y-5 text-navy-700">
+            <p>Miriam spent eleven years in operations roles before founding StratEdge, the last six as VP of Operations at a regional grocery wholesaler, where she was responsible for 300 employees across three distribution centers. There she learned that most “strategy problems” are actually operating problems wearing a nicer suit: the plan looked fine in the deck, but orders still slipped because nobody owned the handoff between scheduling and shipping.</p>
+            <p>She left to start StratEdge in 2016 with a narrow thesis: growth-stage companies between roughly ten and five hundred employees rarely need a full-time executive for the problem in front of them, but they often need senior judgment for six to twelve weeks. Since then the firm has completed more than 120 engagements across retail, software, healthcare, and light manufacturing, typically working directly with the founder or COO rather than through layers.</p>
+            <p>Miriam holds an MBA from a public university and teaches a workshop on operating cadence at a local business school each spring. She writes most of the firm’s essays on strategy and operations, several of which have been picked up by industry newsletters.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="surface-tint">
+      <div class="max-w-4xl mx-auto px-5 py-20 md:py-28">
+        <span aria-hidden="true" class="block w-14 h-[3px] bg-brass-500 mb-8"></span>
+        <p class="font-display text-3xl md:text-5xl font-medium leading-tight text-navy-900">We exist to give growing companies the caliber of judgment usually reserved for the Fortune 500, without the baggage that comes with it.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="max-w-6xl mx-auto px-5 py-16 md:py-24 md:grid md:grid-cols-12 md:gap-12">
+        <div class="md:col-span-7">
+          <h2 class="heading-tick-top font-display text-3xl md:text-4xl font-semibold text-navy-900">What we hold to</h2>
+          <div class="mt-10 divide-y divide-brass-500/25 border-y border-brass-500/25">
+            <div class="py-7">
+              <h3 class="font-display text-2xl text-navy-900">Judgment over frameworks</h3>
+              <p class="mt-2 text-navy-700">A framework is a starting point, not an answer. We adapt the method to your business rather than forcing your business into the method.</p>
+            </div>
+            <div class="py-7">
+              <h3 class="font-display text-2xl text-navy-900">Senior people on the work</h3>
+              <p class="mt-2 text-navy-700">The consultant in the first meeting is the consultant doing the work. We do not sell senior and staff junior.</p>
+            </div>
+            <div class="py-7">
+              <h3 class="font-display text-2xl text-navy-900">Evidence before opinion</h3>
+              <p class="mt-2 text-navy-700">We form views from data and direct observation, and we change them when the evidence changes. Strong opinions are held loosely.</p>
+            </div>
+            <div class="py-7">
+              <h3 class="font-display text-2xl text-navy-900">Plain language</h3>
+              <p class="mt-2 text-navy-700">Recommendations you can read without a glossary. If we cannot explain it to your front-line team, it is not finished.</p>
+            </div>
+          </div>
+        </div>
+        <figure class="mt-12 md:mt-0 md:col-span-5">
+          <span class="frame-brass block">
+            <img src="images/about-office.jpg" alt="The StratEdge consulting team working together in their Portland office" width="1100" height="733"
+                 class="w-full h-72 md:h-[28rem] object-cover">
+          </span>
+          <figcaption class="mt-4 text-sm text-navy-700">The working session rarely stays at the desk. Most of what we learn happens beside the people doing the work.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="bg-navy-950 text-white">
+      <div class="max-w-6xl mx-auto px-5 py-16 md:py-24 md:flex md:items-center md:justify-between md:gap-12">
+        <div class="max-w-xl">
+          <span aria-hidden="true" class="block w-14 h-[3px] bg-brass-500 mb-6"></span>
+          <h2 class="font-display text-3xl md:text-4xl font-semibold">Curious whether we are the right fit?</h2>
+          <p class="mt-4 text-white/80">The first conversation is free and unhurried.</p>
+        </div>
+        <a href="contact.html" class="mt-8 md:mt-0 inline-flex shrink-0 items-center gap-2 bg-white text-navy-900 font-medium px-7 py-3.5 hover:bg-brass-100 transition-colors">
+          <i data-lucide="calendar" class="w-4 h-4 text-brass-600" aria-hidden="true"></i> Book a Consultation
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+<!-- ============ FOOTER ============ -->
+  <footer class="bg-navy-950 text-white">
+    <div class="max-w-6xl mx-auto px-5 py-14">
+      <div class="md:grid md:grid-cols-12 md:gap-10">
+        <div class="md:col-span-4">
+          <a href="index.html" class="font-display text-xl font-semibold text-white">StratEdge<span class="text-brass-500">.</span></a>
+          <p class="mt-3 text-sm text-white/70 max-w-xs">A boutique consulting firm helping growth-stage businesses make sharper decisions and run leaner operations.</p>
+          <div class="mt-5 flex gap-4">
+            <a href="#" aria-label="StratEdge on LinkedIn" class="text-brass-500 hover:text-brass-100"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+            <a href="#" aria-label="StratEdge on X" class="text-brass-500 hover:text-brass-100"><i data-lucide="twitter" class="w-5 h-5"></i></a>
+            <a href="#" aria-label="Email StratEdge" class="text-brass-500 hover:text-brass-100"><i data-lucide="mail" class="w-5 h-5"></i></a>
+          </div>
+        </div>
+        <nav class="mt-10 md:mt-0 md:col-span-3" aria-label="Footer navigation">
+          <h2 class="text-sm font-semibold text-brass-500">Firm</h2>
+          <ul class="mt-4 space-y-2.5 text-sm text-white/70">
+            <li><a href="about.html" class="link-underline">About</a></li>
+            <li><a href="services.html" class="link-underline">Services</a></li>
+            <li><a href="case-studies.html" class="link-underline">Case Studies</a></li>
+            <li><a href="blog.html" class="link-underline">Blog</a></li>
+            <li><a href="contact.html" class="link-underline">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="mt-10 md:mt-0 md:col-span-5">
+          <h2 class="text-sm font-semibold text-brass-500">Newsletter</h2>
+          <p class="mt-2 text-sm text-white/70">One practical essay on strategy or operations, twice a month.</p>
+          <div class="mt-4">
+            <form data-newsletter class="flex flex-col sm:flex-row gap-3" novalidate>
+              <label for="footer-email" class="sr-only">Email address</label>
+              <input id="footer-email" type="email" required placeholder="you@company.com"
+                     class="flex-1 border border-white/25 bg-navy-900 px-4 py-2.5 text-sm text-white placeholder:text-white/45 focus:border-brass-500">
+              <button type="submit" class="bg-brass-500 text-navy-950 text-sm font-semibold px-6 py-2.5 hover:bg-brass-100 transition-colors">Subscribe</button>
+            </form>
+            <p data-newsletter-msg hidden class="mt-3 text-sm text-brass-100 font-medium"></p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12 pt-6 border-t border-brass-500/30 text-sm text-white/60 flex flex-wrap justify-between gap-2">
+        <p>© <span data-year>2026</span> StratEdge Consulting. All rights reserved.</p>
+        <p>Fictional firm for demonstration purposes.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
