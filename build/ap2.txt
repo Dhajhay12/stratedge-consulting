@@ -1,0 +1,3 @@
+﻿====
+pages checked: 9  (about.html, blog-leadership-tips.html, blog-planning-guide.html, blog-scale-a-business.html, blog.html, case-studies.html, contact.html, index.html, services.html)
+top-level content containers with < 16px mobile padding: 0

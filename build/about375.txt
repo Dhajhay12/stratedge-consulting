@@ -1,0 +1,9 @@
+﻿--- pass 1 about.html @375px ---
+    clientW=375  scrollW=375  textBlocks=33  minLeftInset=19px
+    blocks with left inset < 16px: 0
+--- pass 2 about.html @375px ---
+    clientW=375  scrollW=375  textBlocks=33  minLeftInset=19px
+    blocks with left inset < 16px: 0
+--- pass 3 about.html @375px ---
+    clientW=375  scrollW=375  textBlocks=33  minLeftInset=19px
+    blocks with left inset < 16px: 0

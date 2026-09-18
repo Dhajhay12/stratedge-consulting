@@ -25,7 +25,7 @@ buildPage({
     <div class="rule-brass max-w-6xl mx-auto"></div>
 
     <section>
-      <div class="max-w-6xl mx-auto md:divide-y md:divide-brass-500/25">
+      <div class="max-w-6xl mx-auto px-5 md:px-6 md:divide-y md:divide-brass-500/25">
 
         <article id="regional-retail" class="py-14 md:py-20 scroll-mt-24">
           <div class="max-w-3xl">
@@ -54,7 +54,7 @@ buildPage({
           </div>
         </article>
 
-        <article id="b2b-saas" class="px-5 md:px-6 py-14 md:py-20 md:border-t md:border-brass-500/25 scroll-mt-24 surface-tint">
+        <article id="b2b-saas" class="py-14 md:py-20 md:border-t md:border-brass-500/25 scroll-mt-24 surface-tint">
           <div class="max-w-3xl">
             <span class="text-sm text-brass-600 font-semibold">B2B SaaS Startup</span>
             <h2 class="heading-tick-top font-display text-3xl md:text-4xl font-semibold text-navy-900 mt-2">Trimming overhead before the next raise</h2>
@@ -81,7 +81,7 @@ buildPage({
           </div>
         </article>
 
-        <article id="regional-healthcare" class="px-5 md:px-6 py-14 md:py-20 md:border-t md:border-brass-500/25 scroll-mt-24 surface-tint">
+        <article id="regional-healthcare" class="py-14 md:py-20 md:border-t md:border-brass-500/25 scroll-mt-24 surface-tint">
           <div class="max-w-3xl">
             <span class="text-sm text-brass-600 font-semibold">Regional Healthcare Provider</span>
             <h2 class="heading-tick-top font-display text-3xl md:text-4xl font-semibold text-navy-900 mt-2">Rebuilding the patient acquisition funnel</h2>

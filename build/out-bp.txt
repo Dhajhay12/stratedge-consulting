@@ -1,0 +1,50 @@
+﻿
+######## viewport 375px ########
+  about.html                   measured=   0  minInset= nullpx  edgeViolations=0  [clientW=375]
+  blog-leadership-tips.html    measured=  40  minInset=   20px  edgeViolations=0  [clientW=375]
+  blog-planning-guide.html     measured=  38  minInset=   20px  edgeViolations=0  [clientW=375]
+  blog-scale-a-business.html   measured=  38  minInset=   20px  edgeViolations=0  [clientW=375]
+  blog.html                    measured=  32  minInset=   20px  edgeViolations=0  [clientW=375]
+  case-studies.html            measured=  50  minInset=   20px  edgeViolations=0  [clientW=375]
+  contact.html                 measured=  42  minInset=   20px  edgeViolations=0  [clientW=375]
+  index.html                   measured=  65  minInset=   20px  edgeViolations=0  [clientW=375]
+  services.html                measured=  60  minInset=   20px  edgeViolations=0  [clientW=375]
+
+######## viewport 414px ########
+  about.html                   measured=  35  minInset=   20px  edgeViolations=0  [clientW=414]
+  blog-leadership-tips.html    measured=  40  minInset=   20px  edgeViolations=0  [clientW=414]
+  blog-planning-guide.html     measured=  38  minInset=   20px  edgeViolations=0  [clientW=414]
+  blog-scale-a-business.html   measured=  38  minInset=   20px  edgeViolations=0  [clientW=414]
+  blog.html                    measured=  32  minInset=   20px  edgeViolations=0  [clientW=414]
+  case-studies.html            measured=  50  minInset=   20px  edgeViolations=0  [clientW=414]
+  contact.html                 measured=  42  minInset=   20px  edgeViolations=0  [clientW=414]
+  index.html                   measured=  65  minInset=   20px  edgeViolations=0  [clientW=414]
+  services.html                measured=  60  minInset=   20px  edgeViolations=0  [clientW=414]
+
+######## viewport 768px ########
+  about.html                   measured=  39  minInset=   20px  edgeViolations=0  [clientW=753]
+  blog-leadership-tips.html    measured=  44  minInset=   20px  edgeViolations=0  [clientW=753]
+  blog-planning-guide.html     measured=  42  minInset=   20px  edgeViolations=0  [clientW=753]
+  blog-scale-a-business.html   measured=  42  minInset=   20px  edgeViolations=0  [clientW=753]
+  blog.html                    measured=  36  minInset=   20px  edgeViolations=0  [clientW=753]
+  case-studies.html            measured=  54  minInset=   20px  edgeViolations=0  [clientW=753]
+  contact.html                 measured=  46  minInset=   20px  edgeViolations=0  [clientW=753]
+  index.html                   measured=  69  minInset=   20px  edgeViolations=0  [clientW=753]
+  services.html                measured=  64  minInset=   20px  edgeViolations=0  [clientW=753]
+
+######## viewport 1440px ########
+  about.html                   measured=  39  minInset=  157px  edgeViolations=0  [clientW=1425]
+  blog-leadership-tips.html    measured=  44  minInset=  157px  edgeViolations=0  [clientW=1425]
+  blog-planning-guide.html     measured=  42  minInset=  157px  edgeViolations=0  [clientW=1425]
+  blog-scale-a-business.html   measured=  42  minInset=  157px  edgeViolations=0  [clientW=1425]
+  blog.html                    measured=  36  minInset=  157px  edgeViolations=0  [clientW=1425]
+  case-studies.html            measured=  54  minInset=  157px  edgeViolations=0  [clientW=1425]
+  contact.html                 measured=  46  minInset=  157px  edgeViolations=0  [clientW=1425]
+  index.html                   measured=  69  minInset=  157px  edgeViolations=0  [clientW=1425]
+  services.html                measured=  64  minInset=  157px  edgeViolations=0  [clientW=1425]
+
+######## summary: elements within 12px of an edge ########
+  375px  ->  0 violations
+  414px  ->  0 violations
+  768px  ->  0 violations
+  1440px  ->  0 violations

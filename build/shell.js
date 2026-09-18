@@ -7,7 +7,6 @@ const ROOT = path.join(__dirname, '..');
 const indexHtml = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
 
 const bodyStart = indexHtml.indexOf('<body');
-// no-op guard so shell edits stay in sync with index.html
 const headPart = indexHtml.slice(0, bodyStart); // through </head>\n
 const mainStart = indexHtml.indexOf('<main id="main">');
 const headerPart = indexHtml.slice(bodyStart, mainStart); // skip link + header + mobile menu

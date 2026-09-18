@@ -1,0 +1,25 @@
+﻿
+==== services.html @375px ====
+  Business Strategy article
+        padding-left=0px  padding-right=0px
+        <article> box left=20 w=335   h2.left=20  p.left=20  li.left=20
+  Market Research article
+        padding-left=0px  padding-right=0px
+        <article> box left=20 w=335   h2.left=20  p.left=20  li.left=20
+  Process Optimization article
+        padding-left=0px  padding-right=0px
+        <article> box left=20 w=335   h2.left=20  p.left=20  li.left=20
+  Startup Consulting article
+        padding-left=0px  padding-right=0px
+        <article> box left=20 w=335   h2.left=20  p.left=20  li.left=20
+
+==== case-studies.html @375px ====
+  Case study 1
+        padding-left=0px  padding-right=0px
+        <article> box left=20 w=335   h2.left=20  p.left=20  li.left=null
+  Case study 2
+        padding-left=0px  padding-right=0px
+        <article> box left=20 w=335   h2.left=20  p.left=20  li.left=null
+  Case study 3
+        padding-left=0px  padding-right=0px
+        <article> box left=20 w=335   h2.left=20  p.left=20  li.left=null

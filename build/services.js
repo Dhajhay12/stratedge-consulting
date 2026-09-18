@@ -15,7 +15,7 @@ buildPage({
     <div class="rule-brass max-w-6xl mx-auto"></div>
 
     <section>
-      <div class="max-w-6xl mx-auto md:divide-y md:divide-brass-500/25">
+      <div class="max-w-6xl mx-auto px-5 md:px-6 md:divide-y md:divide-brass-500/25">
 
         <article id="business-strategy" class="py-14 md:py-20 md:grid md:grid-cols-12 md:gap-12 scroll-mt-24">
           <div class="md:col-span-5">
@@ -42,7 +42,7 @@ buildPage({
           </div>
         </article>
 
-        <article id="market-research" class="px-5 md:px-6 py-14 md:py-20 md:grid md:grid-cols-12 md:gap-12 scroll-mt-24 surface-tint">
+        <article id="market-research" class="py-14 md:py-20 md:grid md:grid-cols-12 md:gap-12 scroll-mt-24 surface-tint">
           <div class="md:col-span-5">
             <figure class="frame-brass">
               <img src="images/services-research.jpg" alt="A consultant mapping customer research findings on a whiteboard" width="1100" height="733"
@@ -67,7 +67,7 @@ buildPage({
           </div>
         </article>
 
-        <article id="process-optimization" class="px-5 md:px-6 py-14 md:py-20 md:grid md:grid-cols-12 md:gap-12 scroll-mt-24 surface-tint">
+        <article id="process-optimization" class="py-14 md:py-20 md:grid md:grid-cols-12 md:gap-12 scroll-mt-24 surface-tint">
           <div class="md:col-span-5">
             <figure class="frame-brass">
               <img src="images/services-process.jpg" alt="An operations specialist working through a process map on screen" width="1100" height="733"
@@ -127,11 +127,11 @@ buildPage({
           <p class="mt-2 text-white/75">Get one practical essay on strategy or operations, twice a month, and hear about new case studies first.</p>
         </div>
         <div class="mt-6 md:mt-0 w-full md:max-w-md">
-          <form data-newsletter class="flex flex-col sm:flex-row gap-3" novalidate>
+          <form data-newsletter class="flex flex-col sm:flex-row flex-wrap gap-3" novalidate>
             <label for="svc-newsletter" class="sr-only">Email address</label>
             <input id="svc-newsletter" type="email" required placeholder="you@company.com"
-                   class="flex-1 border border-white/25 bg-navy-950 px-4 py-2.5 text-sm text-white placeholder:text-white/45 focus:border-brass-500">
-            <button type="submit" class="bg-brass-500 text-navy-950 text-sm font-semibold px-6 py-2.5 hover:bg-brass-100 transition-colors">Subscribe</button>
+                   class="w-full min-w-0 sm:flex-1 sm:basis-40 border border-white/25 bg-navy-950 px-4 py-2.5 text-sm text-white placeholder:text-white/45 focus:border-brass-500">
+            <button type="submit" class="shrink-0 bg-brass-500 text-navy-950 text-sm font-semibold px-6 py-2.5 hover:bg-brass-100 transition-colors">Subscribe</button>
           </form>
           <p data-newsletter-msg hidden class="mt-3 text-sm text-brass-100 font-medium"></p>
         </div>

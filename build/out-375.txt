@@ -1,0 +1,29 @@
+﻿=== about.html  @375px
+    min left inset of text content: 20px
+    no text content within 12px of either viewport edge
+=== blog-leadership-tips.html  @375px
+    min left inset of text content: 20px
+    no text content within 12px of either viewport edge
+=== blog-planning-guide.html  @375px
+    min left inset of text content: 20px
+    no text content within 12px of either viewport edge
+=== blog-scale-a-business.html  @375px
+    min left inset of text content: 20px
+    no text content within 12px of either viewport edge
+=== blog.html  @375px
+    min left inset of text content: 20px
+    no text content within 12px of either viewport edge
+=== case-studies.html  @375px
+    min left inset of text content: 20px
+    no text content within 12px of either viewport edge
+=== contact.html  @375px
+    min left inset of text content: 20px
+    no text content within 12px of either viewport edge
+=== index.html  @375px
+    min left inset of text content: 20px
+    no text content within 12px of either viewport edge
+=== services.html  @375px
+    min left inset of text content: 20px
+    no text content within 12px of either viewport edge
+====
+total elements touching a viewport edge at 375px: 0

@@ -1,0 +1,49 @@
+﻿
+==== 375px ====
+  index.html          375px viewport -> scrollWidth 375  [NO-HSCROLL]
+  about.html          375px viewport -> scrollWidth 375  [NO-HSCROLL]
+        surface-tint W=375 textInset=20
+        bg-navy-950 W=375 textInset=20
+        bg-navy-950 W=375 textInset=20
+  services.html       375px viewport -> scrollWidth 375  [NO-HSCROLL]
+        bg-navy-900 W=375 textInset=20
+        bg-navy-950 W=375 textInset=20
+        bg-navy-950 W=375 textInset=20
+  case-studies.html   375px viewport -> scrollWidth 375  [NO-HSCROLL]
+        bg-navy-950 W=375 textInset=20
+        bg-navy-950 W=375 textInset=20
+  blog.html           375px viewport -> scrollWidth 375  [NO-HSCROLL]
+        surface-tint W=375 textInset=20
+        bg-navy-900 W=375 textInset=20
+        bg-navy-950 W=375 textInset=20
+  contact.html        375px viewport -> scrollWidth 375  [NO-HSCROLL]
+        surface-tint W=375 textInset=20
+        bg-navy-950 W=375 textInset=20
+        bg-navy-950 W=375 textInset=20
+
+==== 768px ====
+  index.html          753px viewport -> scrollWidth 753  [NO-HSCROLL]
+        surface-tint W=753 textInset=20
+        surface-tint W=753 textInset=20
+        surface-tint W=753 textInset=20
+        bg-navy-950 W=753 textInset=20
+        bg-navy-950 W=753 textInset=20
+  about.html          753px viewport -> scrollWidth 753  [NO-HSCROLL]
+        surface-tint W=753 textInset=20
+        bg-navy-950 W=753 textInset=20
+        bg-navy-950 W=753 textInset=20
+  services.html       753px viewport -> scrollWidth 753  [NO-HSCROLL]
+        bg-navy-900 W=753 textInset=20
+        bg-navy-950 W=753 textInset=20
+        bg-navy-950 W=753 textInset=20
+  case-studies.html   753px viewport -> scrollWidth 753  [NO-HSCROLL]
+        bg-navy-950 W=753 textInset=20
+        bg-navy-950 W=753 textInset=20
+  blog.html           753px viewport -> scrollWidth 753  [NO-HSCROLL]
+        surface-tint W=753 textInset=20
+        bg-navy-900 W=753 textInset=20
+        bg-navy-950 W=753 textInset=20
+  contact.html        753px viewport -> scrollWidth 753  [NO-HSCROLL]
+        surface-tint W=753 textInset=20
+        bg-navy-950 W=753 textInset=20
+        bg-navy-950 W=753 textInset=20

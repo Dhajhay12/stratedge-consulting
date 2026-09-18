@@ -45,11 +45,11 @@ buildPage({
           <p class="mt-2 text-white/75">Get the essays twice a month, before they appear anywhere else, plus occasional notes on new case studies.</p>
         </div>
         <div class="mt-6 md:mt-0 w-full md:max-w-md">
-          <form data-newsletter class="flex flex-col sm:flex-row gap-3" novalidate>
+          <form data-newsletter class="flex flex-col sm:flex-row flex-wrap gap-3" novalidate>
             <label for="blog-newsletter" class="sr-only">Email address</label>
             <input id="blog-newsletter" type="email" required placeholder="you@company.com"
-                   class="flex-1 border border-white/25 bg-navy-950 px-4 py-2.5 text-sm text-white placeholder:text-white/45 focus:border-brass-500">
-            <button type="submit" class="bg-brass-500 text-navy-950 text-sm font-semibold px-6 py-2.5 hover:bg-brass-100 transition-colors">Subscribe</button>
+                   class="w-full min-w-0 sm:flex-1 sm:basis-40 border border-white/25 bg-navy-950 px-4 py-2.5 text-sm text-white placeholder:text-white/45 focus:border-brass-500">
+            <button type="submit" class="shrink-0 bg-brass-500 text-navy-950 text-sm font-semibold px-6 py-2.5 hover:bg-brass-100 transition-colors">Subscribe</button>
           </form>
           <p data-newsletter-msg hidden class="mt-3 text-sm text-brass-100 font-medium"></p>
         </div>

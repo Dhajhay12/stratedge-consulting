@@ -15,7 +15,7 @@ buildPage({
     <div class="rule-brass max-w-6xl mx-auto"></div>
 
     <section>
-      <div class="max-w-6xl mx-auto py-16 md:py-24 md:grid md:grid-cols-12 md:gap-14">
+      <div class="max-w-6xl mx-auto px-5 py-16 md:py-24 md:grid md:grid-cols-12 md:gap-14">
 
         <!-- Consultation request form -->
         <div class="md:col-span-7">
@@ -102,7 +102,7 @@ buildPage({
           <p class="mt-4 text-navy-700">Choose any open slot below. This is a preview of availability for the week ahead; the selected time is confirmed with you before anything is finalized.</p>
         </div>
 
-        <div class="mt-10 -mx-5 px-5 overflow-x-auto pb-2">
+        <div class="mt-10 -mx-5 px-5 overflow-x-auto pb-2" data-calendar-scroll>
           <div class="min-w-[820px] grid grid-cols-6 gap-3">
             <div></div>
             <div class="text-sm font-semibold text-navy-900 pb-2">Monday</div>

@@ -1,0 +1,5 @@
+﻿  MISSING  contact.html:155  px=null  <p class="mt-4 text-navy-700 max-w-prose">
+  MISSING  contact.html:169  px=null  <p class="mt-3 text-navy-700 text-sm max-w-prose">
+====
+pages checked: 9  (about.html, blog-leadership-tips.html, blog-planning-guide.html, blog-scale-a-business.html, blog.html, case-studies.html, contact.html, index.html, services.html)
+top-level content containers with < 16px mobile padding: 2
